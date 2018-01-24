@@ -1,0 +1,29 @@
+ext{
+    serenity_version = "1.8.21"
+}
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:1.8.21")
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile "net.serenity-bdd:serenity-core:$serenity_version"
+    testCompile "net.serenity-bdd:serenity-junit:$serenity_version"
+    testCompile "net.serenity-bdd:serenity-rest-assured:$serenity_version"
+}

@@ -19,3 +19,7 @@ To generate the report:
 The test case report looks like this:
 
 ![Sample report](sample/report.png?raw=true "Sample report")
+
+And the API call log:
+
+![Sample API call log](sample/rest_call.png?raw=true "Sample API call log")

@@ -1,4 +1,4 @@
-# api-testing
+# API testing demo
 A simple serenity - rest assured API test
 
 This is a demo of a REST API test suite using serenity and rest assured libraries.
